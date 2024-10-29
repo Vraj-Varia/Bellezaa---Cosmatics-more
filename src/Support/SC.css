@@ -10,14 +10,18 @@
     transition: all 400ms;
     cursor: pointer;
     border-radius: 12px;
+
     .title {
         font-size: 15px;
         transition: all 400ms;
         cursor: pointer;
         font-family: sans-serif;
     }
+
     &:hover {
         background: wheat;
+        transform: scale(1.1);
+
         .title {
             color: darkblue;
             font-size: 18px;
