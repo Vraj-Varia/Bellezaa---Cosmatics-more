@@ -1,0 +1,54 @@
+.Home {
+    background: url('../assets/background.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: end;
+    color: white;
+    justify-content: center;
+    .text{
+        width: 50vh;
+        h1 {
+            font-size: 60px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    .button {
+        button {
+            padding: 10px;
+            color: white;
+            margin: 10px;
+            background: transparent;
+            border-radius: 12px;
+            font-size: 25px;
+            border: 1px solid white;
+            cursor: pointer;
+            transition: all 300ms;
+            &:hover {
+                background: rgba(255, 166, 255, 0.449);
+            }
+        }
+    }
+    .text,
+    .button {
+        margin-right: 150px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 580px) {
+    .Home{
+        .text,
+        .button {
+            margin: 0;
+            color: black;
+        }
+    }
+}

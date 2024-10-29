@@ -1,0 +1,14 @@
+.ServicesContainer {
+    background: orange;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 125vh;
+    .top {
+        display: flex;  
+        height: 65vh;
+    }
+    .bottom {
+        display: flex;
+    }
+}
