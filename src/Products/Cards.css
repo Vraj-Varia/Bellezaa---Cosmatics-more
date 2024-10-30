@@ -4,8 +4,9 @@
     border-radius: 6px;
     cursor: pointer;
     flex-direction: column;
-    background: rgba(245, 222, 179, 0.579);
-    /* background: whitesmoke; */
+    /* background: rgba(245, 222, 179, 0.579); */
+    /* background: rgba(255, 255, 255, 0.449); */
+    background: white;
     width: max-content;
     min-width: 20vw;
     max-width: 20vw;
