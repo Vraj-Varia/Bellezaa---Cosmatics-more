@@ -5,10 +5,30 @@
     align-items: center;
     justify-content: center;
     width: max-content;
+
     .CardContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin: 10px;
+    }
+}
+
+.Products {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: 0% cover 30%;
+}
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.4;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
     }
 }
 
@@ -28,6 +48,7 @@
         align-items: center;
         justify-content: center;
         width: 100vw;
+
         .CardContainer {
             grid-template-columns: 1fr;
         }
