@@ -1,16 +1,34 @@
 .ServicesContainer {
-    background: orange;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
-    height: 125vh;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    place-self: center;
+    background: lightpink;
+    border-radius: 12px;
 
-    .top {
-        display: flex;
-        height: 65vh;
+    /* height: 125vh; */
+    .left {
+        h1 {
+            color: black;
+            padding: 40px;
+        }
     }
+}
 
-    .bottom {
-        display: flex;
-    }
+
+.divider {
+    width: 90%;
+    height: 0.2vh;
+    background: darkgrey;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    place-self: center;
+}
+
+.separator {
+    background: black;
+    height: 90vh;
+    width: 0.1vw;
 }

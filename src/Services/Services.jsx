@@ -1,23 +1,21 @@
 import React from 'react'
 import './Services.css'
 import ServiceCard from './ServiceCard'
-import lips from '../assets/lipsStick.png'
-import eyes from '../assets/darkeyes.png'
-import bride from '../assets/wedding.png'
-import makeup from '../assets/faceMakeup.png'
+import customers from '../assets/customers.png'
 
 const Services = () => {
   return (
-    <div className='ServicesContainer'>
-        <div className="top">
-            <ServiceCard image={lips} title="LipsSticks"/>
-            <ServiceCard image={eyes} title="Kajal"/>
+    <>
+      <div className='divider'></div>
+      <div className='ServicesContainer'>
+        <div className="left">
+          <h1>Explore the latest cosmatic products at our online store! Shop the best makeup and skincare products online by Sonoman.</h1>
         </div>
-        <div className="bottom">
-            <ServiceCard image={bride} title="Bride"/>
-            <ServiceCard image={makeup} title="MakeUp"/>
+        <div className="right">
+          <ServiceCard image={customers} />
         </div>
-    </div>
+      </div>
+    </>
   )
 }
 
