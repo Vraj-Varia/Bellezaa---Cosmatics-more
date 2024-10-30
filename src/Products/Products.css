@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     width: max-content;
+    place-self: center;
 
     .CardContainer {
         display: grid;
