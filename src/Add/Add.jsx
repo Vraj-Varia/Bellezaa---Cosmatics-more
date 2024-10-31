@@ -4,16 +4,16 @@ import LiquidLiner from '../assets/LiquidLiner.png'
 
 const Add = () => {
   return (
-    <div className='AddService'>
-        <div className="imgSection">
-            <img src={LiquidLiner} alt="" />
-        </div>
-        <div className="textSection">
-            <h3>NEW/</h3>
-            <h1>LIQUID LINER</h1>
-            <h3>Shop the laser-sharp liquid eyeliner that delivers long-lasting, intense color payoff for all your holiday makeup moments.</h3>
-            <button>SHOP</button>
-        </div>
+    <div className='Add'>
+      <div className="imgSection">
+        <img src={LiquidLiner} alt="" />
+      </div>
+      <div className="textSection">
+        <h3>NEW/</h3>
+        <h1>LIQUID LINER</h1>
+        <h3>Shop the laser-sharp liquid eyeliner that delivers long-lasting, intense color payoff for all your holiday makeup moments.</h3>
+        <button>SHOP</button>
+      </div>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-.AddService {
+.Add {
     display: flex;
     height: max-content;
     width: 90%;
@@ -8,6 +8,7 @@
     .imgSection {
         border: 1px solid black;
         border-right: 0;
+        background: rgba(245, 222, 179, 0.5);
 
         img {
             border-radius: 12px;
@@ -21,7 +22,8 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        color: darkslategrey;
+        color: darkblue;
+        background: rgba(245, 222, 179, 0.5);
 
         h3 {
             font-size: 12px;
