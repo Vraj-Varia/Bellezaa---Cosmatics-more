@@ -17,7 +17,7 @@ function App() {
       <Products />
       <Services />
       <Support />
-      {/* <Add /> */}
+      <Add />
     </div>
   )
 }
