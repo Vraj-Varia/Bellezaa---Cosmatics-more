@@ -6,6 +6,7 @@ import Products from './Products/Products'
 import Services from './Services/Services'
 import Support from './Support/Support'
 import Add from './Add/Add'
+import Footer from './Footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <Services />
       <Support />
       <Add />
+      <Footer />
     </div>
   )
 }

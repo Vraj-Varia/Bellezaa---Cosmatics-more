@@ -105,7 +105,6 @@
 }
 
 
-.Support,
 .needHelp {
     animation: appear 5s linear;
     animation-timeline: view();
