@@ -1,17 +1,20 @@
 .AddService {
     display: flex;
-    /* background: lightblue; */
     height: max-content;
     width: 90%;
     place-self: center;
+    place-content: center;
+
     .imgSection {
         border: 1px solid black;
         border-right: 0;
+
         img {
             border-radius: 12px;
             margin: 20px;
         }
     }
+
     .textSection {
         border: 1px solid black;
         padding: 20px;
@@ -19,14 +22,17 @@
         flex-direction: column;
         align-items: start;
         color: darkslategrey;
+
         h3 {
             font-size: 12px;
             margin-bottom: 10px;
         }
+
         h1 {
             font-size: 40px;
             margin-bottom: 10px;
         }
+
         button {
             padding: 15px;
             margin-top: 20px;
@@ -35,6 +41,7 @@
             border: none;
             outline: none;
             border-radius: 20px;
+
             &:hover {
                 text-decoration: underline;
                 cursor: pointer;
