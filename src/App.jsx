@@ -8,20 +8,22 @@ import Support from './Support/Support'
 import Add from './Add/Add'
 import Footer from './Footer/Footer'
 import Login from './Login/Login'
+import Signup from './Login/Signup'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      {/* <Navbar />
-      <Home />
-      <Products />
-      <Services />
-      <Support />
-      <Add />
-      <Footer /> */}
+      {/* <Navbar /> */}
+      {/* <Home /> */}
+      {/* <Products /> */}
+      {/* <Services /> */}
+      {/* <Support /> */}
+      {/* <Add /> */}
+      {/* <Footer /> */}
       <Login />
+      <Signup />
     </div>
   )
 }

@@ -51,3 +51,12 @@
         }
     }
 }
+
+
+.divider {
+    width: 90%;
+    height: 0.2vh;
+    background: darkgrey;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
