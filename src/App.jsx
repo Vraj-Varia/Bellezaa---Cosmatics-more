@@ -7,19 +7,21 @@ import Services from './Services/Services'
 import Support from './Support/Support'
 import Add from './Add/Add'
 import Footer from './Footer/Footer'
+import Login from './Login/Login'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <Home />
       <Products />
       <Services />
       <Support />
       <Add />
-      <Footer />
+      <Footer /> */}
+      <Login />
     </div>
   )
 }

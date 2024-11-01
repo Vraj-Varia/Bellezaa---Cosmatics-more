@@ -1,0 +1,33 @@
+.Login {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background: red; */
+    height: 100vh;
+    overflow: hidden;
+    .left {
+        img {
+            height: 100vh;
+        }
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: whitesmoke;
+        padding: 20px;
+        h1 {
+            font-size: 40px;
+        }
+        input {
+            padding: 12px;
+            font-size: 15px;
+            margin: 20px;
+            border: 1px solid black;
+            border-radius: 12px;
+            outline: none;
+            background: pink;
+            backdrop-filter: blur(20px);
+        }
+    }
+}

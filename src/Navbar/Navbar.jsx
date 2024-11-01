@@ -9,7 +9,6 @@ const Navbar = () => {
             <img src={logo} alt="" />
         </div>
         <div className="navElements">
-            {/* <li><a href='#'>Home</a></li> */}
             <li><a href='#'>FREE TRIAL</a></li>
             <li><a href='#'>SUPPORT</a></li>
             <li><a href='#'>ONLINE DOCUMENTATION</a></li>
