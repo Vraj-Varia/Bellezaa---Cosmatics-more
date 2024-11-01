@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background: orange; */
     position: fixed;
     top: 0;
     width: 100vw;
@@ -18,11 +17,9 @@
     }
     .navElements {
         display: flex;
-        margin-right: 30px;
         li {
             list-style: none;
             margin: 10px;
-            /* background: orange; */
             padding: 10px;
             border-radius: 12px;
             transition: all 300ms;
@@ -33,6 +30,24 @@
             a {
                 text-decoration: none;
                 color: black;
+            }
+        }
+    }
+    .login {
+        margin-right: 30px;
+        button {
+            padding: 12px;
+            border: 1px solid black;
+            background: transparent;
+            outline: none;
+            border-radius: 12px;
+            place-content: center;
+            transition: all 300ms;
+            &:hover {
+                background: rgba(255, 166, 0, 0.449);
+                text-decoration: underline;
+                transform: scale(1.1);
+                cursor: pointer;
             }
         }
     }

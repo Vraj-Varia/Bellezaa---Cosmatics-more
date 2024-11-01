@@ -15,6 +15,9 @@ const Navbar = () => {
             <li><a href='#'>ONLINE DOCUMENTATION</a></li>
             <li><a href='#'>PRODUCTS</a></li>
         </div>
+        <div className="login">
+          <button>LOGIN | SIGNIN</button>
+        </div>
         <div className="burger">
             <li></li>
             <li></li>
