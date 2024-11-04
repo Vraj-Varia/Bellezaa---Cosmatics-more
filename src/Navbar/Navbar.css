@@ -27,7 +27,7 @@
                 cursor: pointer;
                 background: rgba(255, 166, 0, 0.449);
             }
-            link {
+            a {
                 text-decoration: none;
                 color: black;
             }
