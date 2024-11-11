@@ -18,7 +18,9 @@ const Support = () => {
             <button>Contact us</button>
           </form>
         </div>
+        
         <div className="divider"></div>
+
         <div className="needHelp">
           <div className="heading">
             <h1>Need a Little Guidance?</h1>
