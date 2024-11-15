@@ -2,14 +2,17 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* background: whitesmoke; */
-    background: rgba(0, 0, 0, 0.51);
-    color: white;
+    /* background: rgba(0, 0, 0, 1); */
+    background: whitesmoke;
+    color: black;
     height: 80vh;
     .logoContainer {
         margin: 20px;
-        img {
+        svg {
             height: 10vh;
+            path {
+                fill: black;
+            }
         }
     }
     .footerContainer {
