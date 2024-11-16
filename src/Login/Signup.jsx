@@ -12,11 +12,20 @@ const Signup = () => {
   const [password, setPassword] = useState()
 
 
+  const [loading, setLoading] = useState(false)
+
   const handleSubmit = (e) => {
     e.preventDefault()
+    setLoading(true);
     axios.post('http://localhost:3001/LoginRegister', {name, contact, email, password})
-    .then(result => console.log("result" + result))
-    .catch(err=>console.log(err))
+    .then(result => console.log("result", result))
+    .catch(err=>{
+      console.log(err);
+      console.log("Registration failed, please try again!!");
+    })
+    .finally(()=>{
+      setLoading(false);
+    })
   }
 
 
@@ -29,7 +38,7 @@ const Signup = () => {
         <input type="email" name="email" id="email" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
         <input type="password" name="password" id="password" placeholder='Password'onChange={(e) => setPassword(e.target.value)} />
         <p>Already have an account? <Link to="/login">Login</Link></p>
-        <button type='submit'>Register</button>
+        <button type='submit' disabled={loading || !name || !contact || !email || !password}>{loading ? 'Registering...' : 'Register'}</button>
       </form>
       <div className="right">
         <img src={registerImg} alt="" />
