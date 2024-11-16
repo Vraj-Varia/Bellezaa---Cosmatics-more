@@ -14,7 +14,7 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    axios.get('http://localhost:3001/register', {name, contact, email, password})
+    axios.post('http://localhost:3001/LoginRegister', {name, contact, email, password})
     .then(result => console.log("result" + result))
     .catch(err=>console.log(err))
   }
@@ -22,7 +22,7 @@ const Signup = () => {
 
   return (
     <div className='Register'>
-      <form className="left" onSubmit={handleSubmit}>
+      <form className="left" onSubmit={handleSubmit} method='post'>
         <h1>Register</h1>
         <input type="text" name="name" id="name" placeholder='Name' onChange={(e) => setName(e.target.value)} />
         <input type="text" name="contact" id="contact" placeholder='Phone' onChange={(e) => setContact(e.target.value)} />
