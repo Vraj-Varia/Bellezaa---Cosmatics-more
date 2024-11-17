@@ -6,16 +6,19 @@ import oil from '../assets/faceOil.png'
 import tonor from '../assets/faceToner.png'
 import moisturizer from '../assets/moisturizer.png'
 import ExfoliatingGrain from '../assets/ExfoliatingGrain.png'
+import { Link } from 'react-router-dom'
 
 const Products = () => {
   return (
     <div className='Products'>
         <div className="CardContainer">
+          <Link to={'/Item'}>
             <Cards title="Face Serum" img={serum}/>
-            <Cards title="Face Oil" img={oil}/>
+          </Link>
+            {/* <Cards title="Face Oil" img={oil}/>
             <Cards title="Face Toner" img={tonor}/>
             <Cards title="Moisturizer" img={moisturizer}/>
-            <Cards title="Exfoliating" img={ExfoliatingGrain}/>
+            <Cards title="Exfoliating" img={ExfoliatingGrain}/> */}
         </div>
     </div>
   )
