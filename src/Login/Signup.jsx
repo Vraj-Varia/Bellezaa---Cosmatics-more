@@ -3,6 +3,7 @@ import registerImg from '../assets/GCU.png'
 import './Signup.css'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import { useNavigate } from "react-router-dom"
 
 const Signup = () => {
 
@@ -10,15 +11,18 @@ const Signup = () => {
   const [contact, setContact] = useState()
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
-
-
   const [loading, setLoading] = useState(false)
+  const navigate = useNavigate()
+
 
   const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true);
-    axios.post('http://localhost:3001/LoginRegister', {name, contact, email, password})
-    .then(result => console.log("result", result))
+    axios.post('http://localhost:3001/Register', {name, contact, email, password})
+    .then(result => {
+      console.log("result", result);
+      navigate('/home');
+    })
     .catch(err=>{
       console.log(err);
       console.log("Registration failed, please try again!!");

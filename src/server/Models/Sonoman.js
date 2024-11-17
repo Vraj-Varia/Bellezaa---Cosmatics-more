@@ -7,6 +7,6 @@ const SonomanSchema = new mongoose.Schema({
     password: String
 })
 
-const SonomanModel = mongoose.model("LoginRegister", SonomanSchema)
+const SonomanModel = mongoose.model("Register", SonomanSchema)
 
 module.exports = SonomanModel
