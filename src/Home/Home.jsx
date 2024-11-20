@@ -10,8 +10,8 @@ const Home = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, explicabo?</p>
         </div>
         <div className="button">
-            <button>DONATE</button>
-            <button>SHOP</button>
+            <button>DOCUMENTATION</button>
+            <button>LEARN MORE</button>
         </div>
     </div>
   )

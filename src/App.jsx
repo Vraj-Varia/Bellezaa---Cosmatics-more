@@ -12,6 +12,7 @@ import ActualHome from './Home/abc'
 
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Items from './Products/Items/Items'
+import AddProducts from './Products/AddProducts/AddProducts'
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path='/login' element={<Login />}></Route>
         <Route path='/signup' element={<Signup />}></Route>
         <Route path='/Item' element={<Items />}></Route>
+        <Route path='/addproducts' element={<AddProducts />}></Route>
       </Routes>
     </BrowserRouter>
 
