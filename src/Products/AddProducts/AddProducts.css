@@ -3,14 +3,14 @@
     height: 100vh;
     place-content: center;
     place-self: center;
-    background: url('/src/assets/SPA-HerbalCosmetics.png');
+    background: url('/src/assets/HolidayGiftGuide.png');
     background-position: center;
     background-size: cover;
     form {
         h1 {
             position: absolute;
             top: 70px;
-            color: white;
+            color: black;
         }
         display: flex;
         flex-direction: column;
@@ -24,14 +24,25 @@
             border-radius: 10px;
             outline: none;
             border: 1px solid black;
-            background: white;
+            background: rgba(255, 255, 255, 0.375);
+            transition: all 300ms;
+            &:hover {
+                background: rgba(255, 255, 255, 0.575);
+                cursor: pointer;
+            }
+            &::placeholder {
+                color: black;
+            }
         }
         #addBtn {
             background: none;
+            margin: 10px;
+            padding: 10px;
             bordeR: 1px solid black;
             border-radius: 10px;
             transition: all 300ms;
             width: max-content;
+            color: black;
             &:hover {
                 background: green;
                 border: green;

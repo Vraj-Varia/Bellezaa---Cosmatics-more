@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const SonomanModel = require('./Models/Sonoman')
+const AddProductModel = require('./Models/AddProducts')
 
 const app = express()
 app.use(express.json())
@@ -32,6 +33,12 @@ app.post('/Register', (req, res) => {
     .then(Register => {res.json(Register)})
     .catch(err => res.json(err))
 });
+
+app.post('/addproducts', (req, res) => {
+    AddProductModel.create(req.body)
+    .then(products => {res.json(products)})
+    .catch(err => res.json(err))
+})
 
 const port = 3001;
 
