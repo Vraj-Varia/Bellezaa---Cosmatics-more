@@ -36,7 +36,7 @@ app.post('/Register', (req, res) => {
 
 app.post('/addproducts', (req, res) => {
     AddProductModel.create(req.body)
-    .then(products => {res.json(products)})
+    .then(Products => {res.json(Products)})
     .catch(err => res.json(err))
 })
 

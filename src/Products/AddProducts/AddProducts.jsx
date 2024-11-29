@@ -1,20 +1,43 @@
 import React, { useState } from 'react'
 import './AddProducts.css'
 import axios from 'axios'
+import { Form } from 'react-router-dom'
 
 const AddProducts = () => {
-  const [productName, setProductName] = useState()
-  const [ProductPrice, setProductPrice] = useState()
-  const [ProductDescription, setProductDescription] = useState()
-  const [ProductCategory, setProductCategory] = useState()
+  const [productName, setProductName] = useState('')
+  const [ProductPrice, setProductPrice] = useState('')
+  const [ProductDescription, setProductDescription] = useState('')
+  const [ProductCategory, setProductCategory] = useState('')
+  const [productImage, setProductImage] = useState(null)
   const [loading, setLoading] = useState(false)
   
   const handleAddproduct = (e) => {
     e.preventDefault()
     setLoading(true);
-    axios.post('http://localhost:3001/addproducts', {productName, ProductPrice, ProductDescription, ProductCategory})
-    .then(result => {
-      console.log("result", result);
+
+    const formData = new FormData;
+    formData.append(`${productName}`, productName);
+    formData.append('', ProductPrice);
+    formData.append('', ProductDescription);
+    formData.append('', ProductCategory);
+    if (productImage) {
+      formData.append('', productImage); // Include the image file if it exists
+    }
+
+    // axios.post('http://localhost:3001/addproducts', {productName, ProductPrice, ProductDescription, ProductCategory})
+    axios.post('http://localhost:3001/addproducts', formData, {
+      _headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+      get headers() {
+        return this._headers
+      },
+      set headers(value) {
+        this._headers = value
+      },
+    })
+    .then(product => {
+      console.log("result", product);
     })
     .catch(err=>{
       console.log(err);
@@ -39,12 +62,12 @@ const AddProducts = () => {
                 <option value="Sale">Sale</option>
                 <option value="Clean + Planet aware of Sephora">Clean + Planet aware of Sephora</option>
                 <option value="Black Owned Brands">Black Owned Brands</option>
-                <option value="Foundations">Foundations</option>
+                <option value="Face Products">Face Products</option>
                 <option value="Gifts">Gifts</option>
             </select>
-            <input type="file" name="productImage" id="productImage" />
+            <input type="file" name="productImage" id="productImage" onChange={(e) => setProductImage(e.target.files[0])} />
             {/* <input type="submit" value="Add Product" id='addBtn' /> */}
-            <button id='addBtn' disabled={loading || !productName || !ProductPrice || !ProductDescription || !ProductCategory} >{loading ? 'Adding Products...' : 'Add Product'}</button>
+            <button type='submit' id='addBtn' disabled={loading || !productName || !ProductPrice || !ProductDescription || !ProductCategory} >{loading ? 'Verifying Details...' : 'Next'}</button>
         </form>
     </div>
   )

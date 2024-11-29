@@ -33,7 +33,7 @@ const Support = () => {
             <SmallCard title="Sale" />
             <SmallCard title="Clean + Planet aware of Sephora" />
             <SmallCard title="Black Owned Brands" />
-            <SmallCard title="Foundation" />
+            <SmallCard title="Face Products" />
             <SmallCard title="Gifts" />
           </div>
         </div>

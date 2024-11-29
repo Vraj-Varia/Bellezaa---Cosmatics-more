@@ -5,10 +5,9 @@
     justify-content: space-between;
     width: 90%;
     place-self: center;
-    background: lightpink;
+    background: rgba(255, 182, 193, 0.184);
     border-radius: 12px;
 
-    /* height: 125vh; */
     .left {
         h1 {
             color: black;

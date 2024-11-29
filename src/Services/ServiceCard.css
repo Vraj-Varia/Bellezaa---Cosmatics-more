@@ -3,7 +3,7 @@
     z-index: 0;
 
     img {
-        width: 50vw;
         height: 65vh;
+        margin: 0;
     }
 }
