@@ -12,7 +12,9 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        background: rgba(255, 182, 193, 0.098);
+        background: rgba(49, 34, 255, 0.071);
+        /* border: 1px solid black; */
+        border-radius: 12px;
 
         .title {
             cursor: default;

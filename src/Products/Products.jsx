@@ -32,11 +32,14 @@ const Products = () => {
               )
             })
           } */}
+                <Link to={`/Item`}>
+                  <Cards title="Face Serum" img={serum}/>
+                </Link>
 
             <Cards title="Face Oil" img={oil}/>
             <Cards title="Face Toner" img={tonor}/>
             <Cards title="Moisturizer" img={moisturizer}/>
-            <Cards title="Exfoliating" img={ExfoliatingGrain}/>
+            {/* <Cards title="Exfoliating" img={ExfoliatingGrain}/> */}
         </div>
     </div>
   )

@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <div className='Home'>
 
-        <video autoplay loop muted playsInline className='background-clip'>
+        {/* <video autoplay loop muted playsInline className='background-clip'>
           <source src={bgVideo} type='video/mp4'></source>
-        </video>
+        </video> */}
 
         <div className="text">
             <h1>Make your Skin Glow</h1>

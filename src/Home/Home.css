@@ -1,5 +1,5 @@
 .Home {
-    /* background: url('../assets/background.png'); */
+    background: url('../assets/background.png');
     background-position: center;
     background-size: cover;
     display: flex;
