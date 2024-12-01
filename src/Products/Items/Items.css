@@ -9,6 +9,11 @@
     align-items: start;
     justify-content: center;
     .descriptionSection {
+      .mrp {
+        font-weight: 100;
+        font-size: 30px;
+        font-family: sans-serif;
+      }
       .cartSection {
         display: flex;
         button {
