@@ -4,6 +4,13 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+:root {
+    --primary-color: rgb(238, 241, 241);
+}
+
+body {
+    background: var(--primary-color);
+}
 
 .div {
     animation: appear 5s linear;

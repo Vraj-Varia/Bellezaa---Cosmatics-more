@@ -12,7 +12,7 @@ const Add = () => {
         <div className="textSection">
           <h3>NEW/</h3>
           <h1>LIQUID LINER</h1>
-          <h3>Shop the laser-sharp liquid eyeliner that delivers long-lasting, intense color payoff for all your holiday makeup moments.</h3>
+          <h2>Shop the laser-sharp liquid eyeliner that delivers long-lasting, intense color payoff for all your holiday makeup moments.</h2>
           <button>SHOP</button>
         </div>
       </div>

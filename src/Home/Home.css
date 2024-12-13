@@ -1,13 +1,27 @@
 .Home {
-    background: url('../assets/background.png');
+    /* background: url('../assets/background.png'); */
     background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* display: flex;
+    flex-direction: column; */
+    height: max-content;
     align-items: end;
     color: white;
-    justify-content: center;
+    /* justify-content: center; */
+
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: smooth;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+    img {
+        height: 100%;
+    }
 
     .background-clip {
         position: absolute;

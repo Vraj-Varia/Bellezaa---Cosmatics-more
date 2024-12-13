@@ -10,15 +10,6 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 const Products = () => {
-
-  const [products, setProducts] = useState([])
-
-  useEffect(() => {
-    axios.get('http://localhost:5000/getProducts')
-    .then(products => setProducts(products.data))
-    .catch(err => console.log(err))
-  }, []);
-
   return (
     <div className='Products'>
         <div className="CardContainer">
@@ -32,7 +23,7 @@ const Products = () => {
               )
             })
           } */}
-                <Link to={`/Item`}>
+                <Link to={`/Item`} >
                   <Cards title="Face Serum" img={serum}/>
                 </Link>
 

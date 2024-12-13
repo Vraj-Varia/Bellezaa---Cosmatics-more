@@ -13,12 +13,12 @@
         margin: 10px;
     }
 }
-
+/* 
 .Products {
     animation: appear 5s linear;
     animation-timeline: view();
     animation-range: 0% cover 30%;
-}
+} */
 
 
 @keyframes appear {

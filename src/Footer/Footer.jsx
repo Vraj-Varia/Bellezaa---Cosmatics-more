@@ -74,6 +74,16 @@ const Footer = () => {
                         </button>
                     </form>
 
+                    <div className="suggetions">
+                        <button>Serum</button>
+                        <button>Moisturizers</button>
+                        <button>Indian Brands</button>
+                        <button>Hair Care Products</button>
+                        <button>Eyeliner</button>
+                        <button>Kajal</button>
+                        <button>Mascara</button>
+                    </div>
+
                 </div>
             </div>
         </>

@@ -80,6 +80,7 @@
     }
     .bottom {
         display: flex;
+        flex-direction: column;
         position: fixed;
         bottom: 0;
         align-items: center;
@@ -123,6 +124,29 @@
                 input {
                     width: 40vw;
                 }
+            }
+        }
+
+        .suggetions {
+            display: none;
+            transition: all 300ms;
+            button {
+                padding: 6px;
+                margin: 10px;
+                background: transparent;
+                border: 1px solid black;
+                border-radius: 12px;
+                transition: all 300ms;
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                    background: white;
+                }
+            }
+        }
+        &:hover {
+            .suggetions {
+                display: block;
             }
         }
     }
