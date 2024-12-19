@@ -15,11 +15,17 @@ const ActualHome = () => {
     <div>
         <Navbar />
         <Home />
-        <Guidance />
         <Products />
         {/* <Services /> */}
         {/* <Support /> */}
         <Add />
+        {/* <div className="divider"></div> */}
+        <Products />
+        <Products />
+        <div className="divider"></div>
+        <Products />
+        <Guidance />
+        <Products />
         <Footer />
 
         <div className='cartButton'>

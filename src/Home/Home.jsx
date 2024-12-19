@@ -17,12 +17,13 @@ const Home = () => {
           <source src={bgVideo} type='video/mp4'></source>
         </video> */}
 
-        <img src={im1} alt="" />
         <img src={im2} alt="" />
+        <img src={im1} alt="" />
         <img src={im3} alt="" />
         <img src={im4} alt="" />
         <img src={im5} alt="" />
         <img src={im6} alt="" />
+        
 
         {/* <div className="text">
             <h1>Make your Skin Glow</h1>

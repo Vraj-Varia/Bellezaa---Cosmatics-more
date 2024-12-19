@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
-import logo from '../assets/Sonomanlogo.svg'
-import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+
+  const [drop, useDrop] = useState()
+
   return (
     <div className='Navbar'>
         <div className='Logo'>
@@ -18,10 +19,17 @@ const Navbar = () => {
               <li><a href='/makeup'>MAKEUP</a></li>
               <li><a href='/brands'>BRANDS</a></li>
               <li><a href='/support'>SUPPORT</a></li>
-              <li><a href='/products'>PRODUCTS</a></li>
+              <li><a href='/products'>PREMIUM</a></li>
         </div>
         <div className="login">
-          <li><a href="/login">LOGIN | SIGNUP</a></li>
+          <button>
+          <svg height={20} width={20} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg>
+          </button>
+          <div className="dropItems">
+            <li><a href='/login'>Login</a></li>
+            <li>Settings</li>
+            <li>Preference</li>
+          </div>
         </div>
         <div className="burger">
             <li></li>

@@ -34,12 +34,6 @@ app.post('/Register', (req, res) => {
     .catch(err => res.json(err))
 });
 
-app.post('/addproducts', (req, res) => {
-    AddProductModel.create(req.body)
-    .then(Products => {res.json(Products)})
-    .catch(err => res.json(err))
-})
-
 const port = 3001;
 
 app.listen(port, () => {

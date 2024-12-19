@@ -7,11 +7,26 @@
     width: max-content;
     place-self: center;
 
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
     .CardContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin: 10px;
     }
+  
+}
+
+  
+.divider {
+    width: 90%;
+    height: 0.2vh;
+    background: darkgrey;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 /* 
 .Products {

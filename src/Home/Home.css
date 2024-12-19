@@ -1,12 +1,12 @@
 .Home {
-    /* background: url('../assets/background.png'); */
+    /* background: url('../assets/screenshot1.png'); */
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     /* display: flex;
     flex-direction: column; */
     height: max-content;
-    align-items: end;
+    /* align-items: end; */
     color: white;
     /* justify-content: center; */
 
@@ -18,9 +18,12 @@
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    width: 90vw;
+    place-self: center;
+    margin-top: 10vh;
 
     img {
-        height: 100%;
+        height: 30vw;
     }
 
     .background-clip {
@@ -76,3 +79,45 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+.image-slider {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .controls button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .controls button:hover {
+    background-color: #45a049;
+  }
+  
+  .image-index p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+  }
+  

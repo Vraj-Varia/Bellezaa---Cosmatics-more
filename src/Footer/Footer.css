@@ -88,11 +88,13 @@
         padding-top: 10px;
         padding-bottom: 10px;
         color: black;
-        background: rgba(255, 255, 255, 0.501);
+        /* background: rgba(255, 255, 255, 0.501); */
+        background: rgba(245, 222, 179, 0.482);
         backdrop-filter: blur(20px);
         width: 100vw;
         form {
             background: white;
+            /* background: wheat; */
             border: 1px solid grey;
             border-radius: 12px;
             display: flex;
@@ -120,11 +122,6 @@
                     }
                 }
             }
-            &:hover {
-                input {
-                    width: 40vw;
-                }
-            }
         }
 
         .suggetions {
@@ -147,6 +144,9 @@
         &:hover {
             .suggetions {
                 display: block;
+            }
+            input {
+                width: 40vw;
             }
         }
     }

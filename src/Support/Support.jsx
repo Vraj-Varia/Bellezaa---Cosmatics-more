@@ -15,6 +15,9 @@ const Support = () => {
             <input type="text" name="name" id="name" placeholder='Name' />
             <input type="text" name="phone" id="phone" placeholder='Phone' />
             <input type="email" name="email" id="email" placeholder='Email' />
+            <input type="text" name="Address" id="address" placeholder='Address' />
+            <input type="text" name="province" id="province" placeholder='Province' />
+            <input type="text" name="country" id="country" placeholder='Country' />
             <textarea name="message" id="message" placeholder='Message...'></textarea>
             <button>Contact us</button>
           </form>
