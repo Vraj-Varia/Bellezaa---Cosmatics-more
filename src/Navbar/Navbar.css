@@ -50,8 +50,9 @@
     }
     .login {
         margin-right: 90px;
+        display: flex;
         .dropItems {
-            display: none;
+            /* display: none; */
             position: absolute;
             top: 8vh;
             background: white;

@@ -16,16 +16,6 @@ const Products = () => {
   return (
     <div className='Products'>
         <div className="CardContainer">
-
-          {/* {
-            products.map((products, index)=>{
-              return(
-                <Link to={`/Item/${product.id}`} key={product.id}>
-                  <Cards title={products.title} img={serum}/>
-                </Link>
-              )
-            })
-          } */}
                 <a href={`/Item`} >
                   <Cards title="Face Serum" img={serum} description="Plum 10% Niacinamide Face Serum With Rice Water & Squalane (10ml)" price="300"/>
                 </a>
