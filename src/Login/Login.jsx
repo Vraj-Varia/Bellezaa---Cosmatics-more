@@ -4,6 +4,7 @@ import loginImg from '../assets/UGC.png'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { useNavigate } from "react-router-dom"
+import { useAuth0 } from '@auth0/auth0-react'
 
 const Login = () => {
   
@@ -20,7 +21,7 @@ const Login = () => {
     .then(result => {
       console.log("result", result);
       if(result.data === "Success") {
-        navigate('/home');
+        navigate('/');
       }
     })
     .catch(err=>{

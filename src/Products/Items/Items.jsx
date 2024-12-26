@@ -7,7 +7,7 @@ import productImage from '../Items/image.png'
 const Items = () => {
   return (
     <div className='itemsContainer'>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="description_container">
           <div className="upperSection">
             <div className="imageSection">
@@ -45,7 +45,7 @@ const Items = () => {
             <div className="paymentMode"></div>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }

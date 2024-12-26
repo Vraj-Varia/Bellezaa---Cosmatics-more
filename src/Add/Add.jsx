@@ -2,10 +2,10 @@ import React from "react";
 import "./Add.css";
 import LiquidLiner3 from "../assets/gift.png";
 
-const Add = () => {
+const Add = (props) => {
   return (
     <>
-      {/* <div className="Add">
+      <div className="Add">
         <div className="imgSection">
           <img src={props.img} alt="" />
         </div>
@@ -15,8 +15,8 @@ const Add = () => {
           <h2>{props.msg}</h2>
           <button>SHOP</button>
         </div>
-      </div> */}
-      <div className="Add">
+      </div>
+      {/* <div className="Add">
         <div className="imgSection">
           <img src={LiquidLiner3} alt="" />
         </div>
@@ -29,7 +29,7 @@ const Add = () => {
           </h2>
           <button>SHOP</button>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

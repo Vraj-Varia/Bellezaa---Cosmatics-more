@@ -2,18 +2,25 @@ import React, { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [drop, setDrop] = useState(false);
+  const [dropProfile, setDropProfile] = useState(false);
+  const [dropCategory, setCategoryProfile] = useState(false);
 
   const dropFun = () => {
     {
-      drop ? setDrop(false) : setDrop(true);
+      dropProfile ? setDropProfile(false) : setDropProfile(true);
     }
   };
+  const handleDropCategory = () => {
+    {
+      dropCategory ? setCategoryProfile(false) : setCategoryProfile(true);
+    }
+  }
 
   return (
     <div className="Navbar">
       <div className="Logo">
         {/* <img src={logo} alt="" /> */}
+        <a href="/">
         <svg
           width="300"
           height="72"
@@ -26,10 +33,28 @@ const Navbar = () => {
             fill="white"
           />
         </svg>
+        </a>
       </div>
       <div className="navElements">
-        <li>
-          <a href="/categories">CATEGORIES</a>
+        <li className="categories">
+          <button onClick={handleDropCategory}>CATEGORIES</button>
+          <div className="itemsCategories">
+            {dropCategory ? (
+              <ul>
+                <li>
+                  <a href="/skin_care">Skin Care</a>
+                </li>
+                <li>
+                  <a href="/hair_care">Hair Care</a>
+                </li>
+                <li>
+                  <a href="/makeup">Makeup</a>
+                </li>
+              </ul>
+            ) : (
+              ""
+            )}
+          </div>
         </li>
         <li>
           <a href="/makeup">MAKEUP</a>
@@ -45,6 +70,20 @@ const Navbar = () => {
         </li>
       </div>
       <div className="login">
+        <div className="wish-menu">
+          <button>
+            <a href="/wish">
+              <svg
+                height={20}
+                width={20}
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+              </svg>
+            </a>
+          </button>
+        </div>
         <div className="cart-menu">
           <button>
             <a href="/cart">
@@ -71,13 +110,13 @@ const Navbar = () => {
             </svg>
           </button>
           <div className="dropItems">
-            {drop ? (
+            {dropProfile ? (
               <ul>
                 <li>
                   <a href="/login">Login</a>
                 </li>
+                <li><a href="/profile">Profile</a></li>
                 <li>Settings</li>
-                <li>Preference</li>
               </ul>
             ) : (
               ""

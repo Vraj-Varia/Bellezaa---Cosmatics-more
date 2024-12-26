@@ -6,16 +6,7 @@ import Footer from '../Footer/Footer'
 const Cart = () => {
   return (
     <div className='Cart'>
-      <Navbar />
-
-      <br />
-      <br />
-      <br />
-      <br />
-      
       <h1>Cart</h1>
-
-      <Footer />
     </div>
   )
 }

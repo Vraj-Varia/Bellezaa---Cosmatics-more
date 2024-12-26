@@ -32,12 +32,36 @@
     }
     .navElements {
         display: flex;
+        .catrgories:hover {
+            .itemsCategories {
+                display: block;
+            }
+        }
+        .itemsCategories {
+            position: absolute;
+            margin: 20px;
+            background: rgba(245, 222, 179, 0.482);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid black;
+            /* display: none; */
+            ul {
+                display: flex;
+            }
+        }
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 300ms;
+        }
         li {
             list-style: none;
             margin: 10px;
             padding: 10px;
             border-radius: 12px;
             transition: all 300ms;
+            font-size: 18px;
             &:hover {
                 cursor: pointer;
                 background: rgba(255, 166, 0, 0.449);
@@ -53,11 +77,18 @@
         display: flex;
         .dropItems {
             /* display: none; */
+            /* display: flex; */
             position: absolute;
             top: 8vh;
-            background: white;
-            box-shadow: 0 0 5px 1px black;
-            border-radius: 6px;
+            /* background: white; */
+            ul {
+                display: flex;
+                position: fixed;
+                right: 50px;
+                background: rgba(245, 222, 179, 0.482);
+                backdrop-filter: blur(20px);
+                border-bottom: 1px solid black;
+            }
             li {
                 margin: 5px;
                 border-radius: 6px;
@@ -105,6 +136,7 @@
 
 @media only screen and (max-width: 770px) {
     .Navbar {
+        width: 70vw;
         .navElements {
             display: none;
             flex-direction: column;
@@ -115,8 +147,21 @@
             backdrop-filter: blur(20px);
             border-radius: 6px;
         }
-        .burger {
-            display: block;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .Navbar {
+        width: 70vw;
+        .navElements {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 11vh;
+            right: 0;
+            background: rgba(255, 255, 255, 0.701);
+            backdrop-filter: blur(20px);
+            border-radius: 6px;
         }
     }
 }

@@ -5,7 +5,8 @@
 }
 
 :root {
-    --primary-color: rgb(238, 241, 241);
+    /* --primary-color: rgb(238, 241, 241); */
+    --primary-color: rgb(251, 246, 246);
 }
 
 body {
@@ -18,7 +19,9 @@ body {
     animation-range: 0% cover 20%;
 }
 
-
+.divider {
+    place-self: center;
+}
 
 
 

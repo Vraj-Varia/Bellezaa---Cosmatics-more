@@ -7,7 +7,6 @@ const Support = () => {
   return (
     <>
       <div className='adjustEverything'>
-        <Navbar />
         <div className='Support'>
           <h1 className='title'>Support</h1>
           <div className="separator"></div>
@@ -22,7 +21,6 @@ const Support = () => {
             <button>Contact us</button>
           </form>
         </div>
-        <Footer />
       </div>
     </>
   )

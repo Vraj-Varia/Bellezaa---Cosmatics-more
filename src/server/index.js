@@ -1,20 +1,19 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
-const SonomanModel = require('./Models/Sonoman')
-const AddProductModel = require('./Models/AddProducts')
+const BellezaaModel = require('./Models/Bellezaa')
 
 const app = express()
 app.use(express.json())
 app.use(cors())
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/Sonoman")
+mongoose.connect("mongodb://127.0.0.1:27017/Bellezaa")
 
 
 app.post('/Login', (req, res) => {
     const {email, password} = req.body;
-    SonomanModel.findOne({email: email})
+    BellezaaModel.findOne({email: email})
     .then(user => {
         if(user) {
             if (user.password === password) {
@@ -29,7 +28,7 @@ app.post('/Login', (req, res) => {
 })
 
 app.post('/Register', (req, res) => {
-    SonomanModel.create(req.body)
+    BellezaaModel.create(req.body)
     .then(Register => {res.json(Register)})
     .catch(err => res.json(err))
 });
@@ -39,3 +38,4 @@ const port = 3001;
 app.listen(port, () => {
     console.log(`server is running on ${port}`);
 });
+
