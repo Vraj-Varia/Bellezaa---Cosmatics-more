@@ -133,7 +133,7 @@
     }
 }
 
-
+/* 
 @media only screen and (max-width: 770px) {
     .Navbar {
         width: 70vw;
@@ -148,27 +148,54 @@
             border-radius: 6px;
         }
     }
-}
+} */
 
-@media only screen and (max-width: 770px) {
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
     .Navbar {
-        width: 70vw;
-        .navElements {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 11vh;
-            right: 0;
-            background: rgba(255, 255, 255, 0.701);
-            backdrop-filter: blur(20px);
-            border-radius: 6px;
+      /* flex-direction: column; */
+      padding: 10px;
+  
+      .Logo {
+        /* background: red; */
+        /* position: absolute; */
+        svg {
+          height: 30px;
         }
+      }
+  
+      .navElements {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        background: rgba(245, 222, 179, 0.9);
+        backdrop-filter: blur(15px);
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+  
+        li {
+          margin: 5px 0;
+          text-align: center;
+        }
+      }
+  
+      .burger {
+        display: none;
+        flex-direction: column;
+      }
+  
+      .burger.active + .navElements {
+        display: flex; /* Show the menu when burger is active */
+      }
+  
+      .login {
+        margin-right: 0;
+        justify-content: center;
+      }
     }
-}
-
-
-
-
+  }
 
 @keyframes logoAnimation {
     0% {

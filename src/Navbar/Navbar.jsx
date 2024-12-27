@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* <img src={logo} alt="" /> */}
         <a href="/">
         <svg
-          width="300"
+          width="200"
           height="72"
           viewBox="0 0 300 72"
           fill="none"
